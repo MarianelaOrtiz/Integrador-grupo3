@@ -1,12 +1,13 @@
 import React from 'react'
 import Task from './Components/Task/Task'
+import TodoList  from './Components/Task/ToDoList'
 
 const App = () => {
   return (
   /*Creacion de los formatos para rellenar*/
   <div className='todo-wrapper'>
   <div className='todo-input'>
-    <div className='todo-input-item'>
+    <div className='todo-input-item'> 
       <label>Titulo</label>
       <input type="text" placeholder="Por favor insertar la tarea a realizar"/>
     </div>
@@ -18,11 +19,12 @@ const App = () => {
       <button type="button" className='primaryBtn'>Añadir</button>
     </div>
   </div>
+  <TodoList/>
   <div>
-  <Task titulo='Sopita' descripcion='Quesito'/>
+    <Task titulo='Sopita' descripcion='Quesito'/>
   </div>
-</div>
 
+  </div>
   )
 }
 
